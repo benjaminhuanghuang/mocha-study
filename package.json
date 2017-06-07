@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "mocha",
+    "test-game": "mocha 'test/ship_test.js'",
     "test-es6": "mocha 'test-es6/**/*.js' --compilers js:babel-core/register"
   },
   "repository": {
