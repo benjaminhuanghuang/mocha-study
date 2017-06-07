@@ -1,3 +1,11 @@
+/* 
+    Usage: node expect-sample
+*/
+
+// var chai = require('chai');
+// var expect = chai.expect;
+var expect = require('chai').expect;
+
 // 相等或不相等
 expect(4 + 5).to.be.equal(9);
 expect(4 + 5).to.be.not.equal(10);
@@ -6,6 +14,8 @@ expect(foo).to.be.deep.equal({ bar: 'baz' });
 // 布尔值为true
 expect('everthing').to.be.ok;
 expect(false).to.not.be.ok;
+// expect(true).to.be.false;    // throw AssertionError
+expect(true).to.be.true; 
 
 // typeof
 expect('test').to.be.a('string');

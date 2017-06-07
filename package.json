@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "test-es6": "mocha 'test-es6/**/*.js' --compilers js:babel-core/register"
   },
   "repository": {
     "type": "git",
