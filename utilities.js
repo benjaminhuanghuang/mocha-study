@@ -1,6 +1,6 @@
 function gatherNameOf(arrayOfPeople) {
     return arrayOfPeople.map((person) => {
-        person.name;
+        return person.name;
     });
 }
 
